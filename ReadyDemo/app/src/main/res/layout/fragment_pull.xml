@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_pull"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <TextView
+        android:id="@+id/rect_view"
+        android:layout_width="175dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_white_squre_bg"
+        android:visibility="gone"
+        />
+
+    <com.why.readydemo.ui.ItemImageView
+        android:id="@+id/screen_itemImageView"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/screen_v1_55"/>
+
+    <LinearLayout
+        android:id="@+id/slide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/background_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#55000000"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/image_choose"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="#55000000"
+                android:layout_height="100dp">
+                <ImageView
+                    android:id="@+id/image_selected"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:src="@drawable/confirm_choose"
+                    />
+                <ImageView
+                    android:id="@+id/image_not_selected"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:src="@drawable/cancle_choose"
+                    />
+            </LinearLayout>
+            <com.why.readydemo.ui.ExpandRecyclerView
+                android:id="@+id/rv_movie_list_fragment"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:background="#55000000"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:visibility="gone"
+                >
+
+            </com.why.readydemo.ui.ExpandRecyclerView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/indicate_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#00000000"
+            android:visibility="gone"
+            android:src="@drawable/up"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/key_49_55_65"
+        android:layout_width="40dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <Button
+            android:id="@+id/bt_65"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/key_65"
+            />
+        <Button
+            android:id="@+id/bt_55"
+            android:layout_marginTop="0dp"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/key_55_selected"
+            />
+        <Button
+            android:id="@+id/bt_45"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/key_49"
+            />
+    </LinearLayout>
+
+    <!--<ExpandableListView-->
+        <!--android:id="@+id/rv_expand_listview_fragment"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="#19000000"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--&gt;-->
+
+    <!--</ExpandableListView>-->
+
+
+</RelativeLayout>
